@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Viagem de Mariah – Suécia</title>
+    <!-- Base stylesheet for layout and typography -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS for interactive maps -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-o9N1j7kzqZNf9fG1v3ZqhT8kiCoAxsR5HrtHfJ3BbkU="
+      crossorigin=""
+    />
+</head>
+<body>
+    <header>
+        <h1>Guia de Viagem de Mariah – Suécia</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#roteiros3">Roteiro 3 Dias</a></li>
+                <li><a href="#roteiros5">Roteiro 5 Dias</a></li>
+                <li><a href="#roteiros7">Roteiro 7 Dias</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#comer">Onde Comer &amp; Beber</a></li>
+                <li><a href="#viver">Viver como local</a></li>
+                <li><a href="#dicas">Dicas &amp; Cultura</a></li>
+                <li><a href="#favoritos">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home / Introduction -->
+        <section id="home" class="section">
+            <h2>Bem‑vinda, Mariah!</h2>
+            <p>
+                <strong>Oi linda!</strong><br>
+                Este guia foi preparado com todo o carinho, pensando em cada momento que você pode viver na Suécia. Mesmo
+                com um oceano de distância, quero que você sinta a minha presença em cada descoberta e em cada escolha.
+                Os roteiros e lugares sugeridos são um presente amoroso — um convite para se permitir aproveitar a vida
+                como merece; foi tudo feito com muito carinho e cuidado por alguém que adoraria estar ao seu lado nessa
+                e em muitas viagens. Use as seções acima para explorar as opções de viagem e clique nos corações para
+                salvar seus lugares favoritos para consultar depois. Aproveite, te amo! ❤️
+            </p>
+        </section>
+
+        <!-- Roteiro de 3 dias -->
+        <section id="roteiros3" class="section">
+            <h2>Roteiro de 3 Dias</h2>
+            <p>
+                Três dias é o mínimo para sentir a essência sueca sem pressa.
+                Nesta sugestão você começa mergulhando na história e na cultura de Estocolmo, navega pelo
+                arquipélago para entender por que os locais amam tanto a natureza e termina renovando corpo e alma
+                com rituais de bem‑estar e uma refeição inesquecível. Cada etapa tem um motivo e uma história.
+            </p>
+            <div class="itinerary-gallery">
+                <img src="images/gamla_stan.jpg" alt="Gamla Stan, Estocolmo">
+                <img src="images/archipelago.jpg" alt="Arquipélago de Estocolmo">
+                <img src="images/sauna.jpg" alt="Sauna sueca">
+            </div>
+            <ol class="itinerary-list">
+                <li>
+                    <strong>Dia 1: Estocolmo cultural</strong>
+                    <p>
+                        Comece pelo coração da capital, Gamla Stan, com suas ruas de paralelepípedos e arquitetura medieval.
+                        Em seguida, encante‑se no Museu Vasa com o navio de guerra do século XVII recuperado quase intacto.
+                        Termine a noite em um bar de coquetéis na região de Östermalm, brindando à aventura que se inicia.
+                        Aproveite também para visitar o Palácio Real e a Catedral de Storkyrkan, fazer um fika em um café tradicional
+                        e explorar lojinhas de artesanato e design nas ruelas escondidas.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro3-dia1" title="Adicionar aos favoritos">♡</button>
+                </li>
+                <li>
+                    <strong>Dia 2: Arquipélago de Estocolmo</strong>
+                    <p>
+                        Faça um passeio de barco até algumas das milhares de ilhas do arquipélago, como Fjäderholmarna ou Vaxholm.
+                        Aproveite o ar puro, caminhe por vilarejos coloridos e experimente um almoço de frutos do mar com vista
+                        para o mar Báltico. Passe por ateliês de artesanato e galerias de arte ou alugue um caiaque para
+                        explorar as ilhotas por conta própria. A natureza aqui é a protagonista.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro3-dia2" title="Adicionar aos favoritos">♡</button>
+                </li>
+                <li>
+                    <strong>Dia 3: Bem‑estar e gastronomia</strong>
+                    <p>
+                        Dedique a manhã ao bem‑estar em uma sauna sueca seguida de banho gelado; o contraste revigora corpo
+                        e mente e faz parte da cultura local. À noite, celebre com um jantar em um restaurante estrelado —
+                        uma oportunidade de provar a nova gastronomia nórdica em grande estilo. Para tornar o dia memorável,
+                        reserve uma mesa no Frantzén, Ekstedt ou AIRA e viva uma experiência culinária inesquecível.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro3-dia3" title="Adicionar aos favoritos">♡</button>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Roteiro de 5 dias -->
+        <section id="roteiros5" class="section">
+            <h2>Roteiro de 5 Dias</h2>
+            <p>
+                Cinco dias permitem equilibrar vida urbana e paisagens naturais.
+                Este roteiro aprofunda sua experiência em Estocolmo, explora mais do arquipélago e apresenta
+                a vibe descontraída de Gotemburgo, a segunda maior cidade do país.
+            </p>
+            <div class="itinerary-gallery">
+                <img src="images/vasa.jpg" alt="Museu Vasa">
+                <img src="images/museum.jpg" alt="Museu de fotografia">
+                <img src="images/haga.jpg" alt="Haga em Gotemburgo">
+            </div>
+            <ol class="itinerary-list">
+                <li>
+                    <strong>Dias 1–2: Estocolmo detalhada</strong>
+                    <p>
+                        Use dois dias para mergulhar mais fundo na capital: visite museus como o Vasa e o Fotografiska,
+                        caminhe pelos bairros descolados de Södermalm e Östermalm, encontre cafés charmosos para o fika
+                        (pausa para café com bolinhos) e faça compras em lojas de design escandinavo. Dedique um
+                        dia inteiro à ilha de Djurgården, onde ficam o parque ao ar livre Skansen, o Museu ABBA e o Museu Nórdico,
+                        e aproveite as ofertas do <em>dagens rätt</em> ao meio‑dia em restaurantes locais.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro5-dia12" title="Adicionar aos favoritos">♡</button>
+                </li>
+                <li>
+                    <strong>Dia 3: Novo arquipélago</strong>
+                    <p>
+                        Aventure‑se por outra ilha do arquipélago, como Sandhamn, com suas praias e trilhas,
+                        ou Grinda, repleta de florestas e campos. Aproveite para fazer um piquenique à beira‑mar.
+                        Caminhe por bosques e praias desertas e, se quiser prolongar a experiência, hospede‑se em uma
+                        cabana e sinta a paz das ilhas ao entardecer.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro5-dia3" title="Adicionar aos favoritos">♡</button>
+                </li>
+                    <li>
+                    <strong>Dias 4–5: Gotemburgo</strong>
+                    <p>
+                        Viaje de trem até Gotemburgo e descubra o bairro histórico de Haga, com lojas vintage e
+                        cafés acolhedores. Desfrute de frutos do mar fresquíssimos no mercado Feskekôrka e experimente
+                        a cena gastronômica local, que rivaliza com a da capital. Aproveite para visitar o parque
+                        de diversões Liseberg, o centro de ciência Universeum, o Jardim Botânico e a Ópera de Gotemburgo.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro5-dia45" title="Adicionar aos favoritos">♡</button>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Roteiro de 7 dias -->
+        <section id="roteiros7" class="section">
+            <h2>Roteiro de 7 Dias</h2>
+            <p>
+                Uma semana abre espaço para experiências improváveis e memoráveis.
+                Este roteiro equilibra dias urbanos, contato profundo com a natureza e uma escapada até a medieval Visby,
+                patrimônio da humanidade. Perfeito para quem quer ir além do óbvio.
+            </p>
+            <div class="itinerary-gallery">
+                <img src="images/museum.jpg" alt="Museu de fotografia">
+                <img src="images/haga.jpg" alt="Haga em Gotemburgo">
+                <img src="images/visby.jpg" alt="Visby, Gotland">
+            </div>
+            <ol class="itinerary-list">
+                <li>
+                    <strong>Dias 1–3: Estocolmo além do básico</strong>
+                    <p>
+                        Depois de ver os pontos clássicos, dedique tempo ao Fotografiska e suas exposições inovadoras,
+                        faça uma aula de culinária nórdica ou um tour de arte de rua e reserve uma mesa em restaurantes
+                        modernistas como Ekstedt ou AIRA para experimentar a cozinha local de vanguarda. Explore também
+                        bairros como Södermalm, faça compras em brechós e lojas vintage, participe de tours
+                        gastronômicos e visite mercados como o Östermalmshallen para provar especialidades locais.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro7-dia123" title="Adicionar aos favoritos">♡</button>
+                </li>
+                <li>
+                    <strong>Dia 4: Imersão na natureza</strong>
+                    <p>
+                        Reserve este dia para uma imersão mais longa: escolha entre um cruzeiro de dia inteiro pelas ilhas
+                        remotas do arquipélago de Estocolmo, uma trilha leve em uma reserva natural ou até mesmo um passeio
+                        de caiaque. Conecte‑se com a paisagem sueca no seu ritmo. Se preferir terra firme, visite a
+                        Reserva Natural de Tyresta ou outro parque nacional próximo à capital.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro7-dia4" title="Adicionar aos favoritos">♡</button>
+                </li>
+                <li>
+                    <strong>Dias 5–6: Gotemburgo com calma</strong>
+                    <p>
+                        Explore museus como o Universeum e a Ópera de Gotemburgo, passeie de barco pelos canais e sinta o
+                        clima relaxado da cidade. Aproveite para fazer uma sauna e spa à moda local e descubra bares e
+                        restaurantes escondidos em Magasinsgatan. Inclua no roteiro o parque de diversões Liseberg,
+                        relaxe em um spa com sauna, percorra as ruas de Magasinsgatan e entre em butiques e galerias
+                        independentes.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro7-dia56" title="Adicionar aos favoritos">♡</button>
+                </li>
+                <li>
+                    <strong>Dia 7: Visby (Gotland)</strong>
+                    <p>
+                        Termine a viagem com uma escapada à ilha de Gotland. Caminhe pelas muralhas de Visby, patrimônio
+                        mundial da UNESCO, visite ruínas de igrejas medievais e se perca entre casas coloridas e rosas
+                        trepadeiras. A atmosfera romântica da cidade será um encerramento perfeito. Não deixe de
+                        provar a culinária local no mercado de Visby e caminhar pelas muralhas ao pôr‑do‑sol, quando
+                        as pedras assumem tonalidades douradas.
+                    </p>
+                    <button class="favorite-btn" data-item="roteiro7-dia7" title="Adicionar aos favoritos">♡</button>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Mapa interativo -->
+        <section id="mapa" class="section">
+            <h2>Mapa</h2>
+            <p>
+                Veja abaixo um mapa com os principais pontos citados nos roteiros.
+                Use os filtros para visualizar apenas determinadas categorias de
+                interesse.
+                <strong>Sem internet?</strong> Sem problemas: o mapa será ocultado automaticamente e o guia continua perfeito.
+            </p>
+            <div id="map" class="map-container"></div>
+            <div class="category-filters">
+                <label><input type="checkbox" class="category-checkbox" value="cidade" checked> Cidade &amp; Cultura</label>
+                <label><input type="checkbox" class="category-checkbox" value="natureza" checked> Natureza &amp; Arquipélago</label>
+                <label><input type="checkbox" class="category-checkbox" value="gastronomia" checked> Gastronomia &amp; Noite</label>
+                <label><input type="checkbox" class="category-checkbox" value="bemestar" checked> Bem‑estar &amp; Sauna</label>
+            </div>
+        </section>
+
+        <!-- Onde Comer e Beber -->
+        <section id="comer" class="section">
+            <h2>Onde Comer &amp; Beber</h2>
+            <p>Abaixo algumas sugestões de restaurantes, cafés e bares para Mariah:</p>
+            <ul class="places-list">
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Frantz%C3%A9n+Stockholm+restaurant" target="_blank">Frantzén – Estocolmo</a></strong>
+                    <p>
+                        ★★★ Michelin. Experiência imersiva onde o jantar começa com um aperitivo no lounge,
+                        continua com explicação dos ingredientes e termina com pratos criativos preparados à sua frente.
+                        O serviço funciona como um relógio e torna a noite inesquecível.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="frantzen_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="frantzen" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Ekstedt+Stockholm+restaurant" target="_blank">Ekstedt – Estocolmo</a></strong>
+                    <p>
+                        ★ Michelin. Tudo é preparado sobre o fogo, sem eletricidade; os clientes iniciam com um tour pela
+                        cozinha e experimentam ostras defumadas com algas e outros sabores intensos.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="ekstedt_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="ekstedt" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Koka+Gothenburg+restaurant" target="_blank">Koka – Gotemburgo</a></strong>
+                    <p>
+                        ★ Michelin. Ambiente moderno de madeira clara; menu degustação sazonal com pratos como bisque de
+                        langostim picante e veado com molho de groselha preta.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="koka_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="koka" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=AIRA+Stockholm+restaurant" target="_blank">AIRA – Estocolmo</a></strong>
+                    <p>
+                        ★★ Michelin. Design arrojado à beira de Djurgården; cozinha aberta e pratos elegantemente
+                        compostos com ingredientes nórdicos de primeiríssima qualidade, acompanhados de serviço atencioso.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="aira_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="aira" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Icebar+Stockholm" target="_blank">Icebar – Estocolmo</a></strong>
+                    <p>
+                        Um bar feito inteiramente de gelo onde você bebe coquetéis servidos em copos de gelo, vestido com
+                        casacos térmicos. A temperatura negativa cria uma experiência divertida e diferente para terminar
+                        a noite com estilo.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="icebar_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="icebar" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Fika+Fabriken+Stockholm" target="_blank">Fika Fabriken – Estocolmo</a></strong>
+                    <p>
+                        Café acolhedor perfeito para a pausa do "fika" — o ritual sueco de café com um kanelbulle (cinnamon bun).
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="fika_fabriken_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="fikafabriken" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Magasin+de+Vin+Gothenburg" target="_blank">Magasin de Vin – Gotemburgo</a></strong>
+                    <p>
+                        Bar de vinhos descolado no bairro Magasinsgatan, com ótimas opções de petiscos e ambiente íntimo.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="magasin_de_vin_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="magasindevin" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Bacchanale+Visby" target="_blank">Bacchanale – Visby</a></strong>
+                    <p>
+                        Bistrô charmoso com pratos sazonais e coquetéis autorais, ideal para um jantar romântico em Gotland.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="bacchanale_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="bacchanale" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <!-- Novos restaurantes e bares inspirados nos guias de referência -->
+                <li>
+                    <strong><a href="https://www.google.com/search?q=DalaNisse+Stockholm" target="_blank">DalaNisse – Estocolmo</a></strong>
+                    <p>
+                        Taverna tradicional sueca próxima a Gamla Stan, famosa pelo <em>dagens rätt</em> (prato do dia)
+                        servido no almoço a preço acessível e pelos pratos clássicos como almôndegas e arenque.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="dalanisse_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="dalanisse" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Checa+Stockholm+restaurant" target="_blank">Checa – Estocolmo</a></strong>
+                    <p>
+                        Restaurante contemporâneo de cozinha peruana com influências nórdicas,
+                        ideal para quem busca sabores diferentes e um ambiente elegante no bairro de Södermalm.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="checa_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="checa" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Bord+27+Gothenburg" target="_blank">Bord 27 – Gotemburgo</a></strong>
+                    <p>
+                        Restaurante moderno e intimista no centro de Gotemburgo com uma carta de vinhos naturais
+                        e pratos criativos que mudam de acordo com as estações.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="bord27_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="bord27" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Östergatan+No.+25+Malmö" target="_blank">Östergatan No. 25 – Malmö</a></strong>
+                    <p>
+                        Gastrobar em Malmö com pratos sazonais, incluindo opções vegetarianas e veganas,
+                        e um ambiente descontraído perfeito para um jantar com amigos.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="ostergatan_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="ostergatan" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Tjoget+Stockholm" target="_blank">Tjoget – Estocolmo</a></strong>
+                    <p>
+                        Incluído entre os melhores bares do mundo, o Tjoget combina bar de coquetéis, vinhos e restaurante
+                        em um ambiente vibrante no bairro de Södermalm. Ideal para terminar a noite com boa música e
+                        drinks criativos.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="tjoget_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="tjoget" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <strong><a href="https://www.google.com/search?q=Feskek%C3%B4rka+Gothenburg+market" target="_blank">Feskekôrka – Gotemburgo</a></strong>
+                    <p>
+                        Mercado de frutos do mar instalado em um edifício que lembra uma igreja, onde você pode provar ostras,
+                        lagostas e outros peixes fresquíssimos ou comprar para levar. Ótimo para experimentar a culinária do
+                        mar em um ambiente típico de Gotemburgo.
+                    </p>
+                    <div class="place-actions">
+                        <button class="map-focus-btn" data-map-id="feskekorka_marker">Ver no mapa</button>
+                        <button class="favorite-btn" data-item="feskekorka" title="Adicionar aos favoritos">♡</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Dicas e Cultura -->
+        <section id="dicas" class="section">
+            <h2>Dicas &amp; Cultura</h2>
+            <ul class="tips-list">
+                <li><strong>Moeda &amp; pagamentos:</strong> A Suécia é praticamente cashless; use cartão ou Apple/Google Pay para quase tudo e leve apenas um pouco de dinheiro para mercados e feiras.</li>
+                <li><strong>Filas e paciência:</strong> Os suecos valorizam a ordem e a cortesia: pegue uma senha e espere sua vez; respeite as filas e o espaço pessoal.</li>
+                <li><strong>Luz do dia:</strong> O verão tem dias intermináveis, enquanto no inverno há poucas horas de luz. Programe atividades considerando o ciclo do sol.</li>
+                <li><strong>Idiomas:</strong> Quase todos falam inglês, mas aprender algumas palavras em sueco demonstra respeito e ajuda na comunicação.</li>
+                <li><strong>Vestimenta:</strong> No ambiente de trabalho as roupas são casuais; nos fins de semana ou à noite, as pessoas se arrumam mais.</li>
+                <li><strong>Álcool &amp; Systembolaget:</strong> Bebidas acima de 3,5% só podem ser compradas nas lojas estatais Systembolaget, que fecham cedo e não abrem aos domingos. A idade mínima é 20 anos para comprar e 18 para consumir em bares — planeje suas compras e saídas considerando esses horários.</li>
+                <li><strong>Duração da viagem:</strong> Cinco dias bastam para ver o essencial; duas semanas permitem mergulhar mais fundo na cultura sueca.</li>
+                <li><strong>Transporte:</strong> Ônibus, metrôs e trens são eficientes; compre passes ou reserve bilhetes com antecedência.</li>
+                <li><strong>Almoço do dia:</strong> O <em>dagens rätt</em> é servido em muitos restaurantes entre 12h e 14h, incluindo prato, salada e café a preço amigável.</li>
+                <li><strong>Hotéis básicos:</strong> Algumas hospedagens econômicas cobram à parte por roupa de cama e toalhas; verifique antes.</li>
+                <li><strong>Midsommar:</strong> No solstício de verão (Midsommar), muitas lojas e restaurantes fecham; as comemorações acontecem em vilarejos e parques.</li>
+                <li><strong>Documentos:</strong> Brasileiros não precisam de visto para turismo até 90 dias, mas é necessário passaporte válido, seguro‑viagem e prova de recursos e passagem de volta.</li>
+                <li><strong>Quando ir:</strong> Primavera (mar–mai) traz flores e trilhas; verão (jun–ago) é ideal para atividades ao ar livre; outono (set–nov) é contemplativo e colorido; inverno (dez–fev) oferece esqui e aurora boreal.</li>
+                <li><strong>Lagom:</strong> O conceito sueco de equilíbrio e moderação inspira a vida no país; aproveite a viagem sem excessos.</li>
+                <li><strong>Lembranças:</strong> Procure artesanato em cerâmica, esculturas de madeira, joias de design nórdico e iguarias como geleia de lingonberry e caviar sueco.</li>
+            </ul>
+        </section>
+
+        <!-- Viver como local -->
+        <section id="viver" class="section">
+            <h2>Viver como local</h2>
+            <p>Descubra mercados, bairros e rituais que fazem parte do cotidiano sueco e se misture aos moradores em ambientes autênticos.</p>
+
+            <!-- Estocolmo -->
+            <div class="local-city">
+                <h3>Estocolmo</h3>
+                <img src="images/gamla_stan.jpg" alt="Mercados e bairros em Estocolmo" class="local-img">
+                <ul class="local-list">
+                    <li><strong>Östermalms&nbsp;Saluhall</strong> – Mercado coberto histórico com bancas de frutos do mar, carnes e queijos. Perfeito para almoçar sozinha e observar a vida local.</li>
+                    <li><strong>Hötorgshallen</strong> – Mercado multicultural no coração da capital com comidas de todo o mundo. Ótimo para experimentar sabores diferentes e sentir a diversidade da cidade.</li>
+                    <li><strong>Södermalm criativo</strong> – Bairro alternativo repleto de brechós, livrarias independentes, cafés e bares. O lugar certo para andar sem destino e absorver o espírito criativo de Estocolmo.</li>
+                </ul>
+            </div>
+
+            <!-- Gotemburgo -->
+            <div class="local-city">
+                <h3>Gotemburgo</h3>
+                <img src="images/haga.jpg" alt="Mercados e bairros em Gotemburgo" class="local-img">
+                <ul class="local-list">
+                    <li><strong>Feskekôrka</strong> – Mercadão de peixes instalado num edifício que lembra uma igreja, onde você pode provar ostras, lagostas e outros frutos do mar fresquíssimos.</li>
+                    <li><strong>Saluhallen&nbsp;Briggen</strong> – Mercado coberto frequentado por moradores, com bancas de produtos locais e refeições rápidas. Uma imersão na rotina gotemburguesa.</li>
+                    <li><strong>Haga&nbsp;Nygata</strong> – Rua principal do bairro Haga, cheia de cafés e lojinhas de design. Ideal para uma tarde preguiçosa com cinnamon bun.</li>
+                </ul>
+            </div>
+
+            <!-- Malmö -->
+            <div class="local-city">
+                <h3>Malmö</h3>
+                <img src="images/bridge.jpg" alt="Mercados e bairros em Malmö" class="local-img">
+                <ul class="local-list">
+                    <li><strong>Malmö&nbsp;Saluhall</strong> – Mercado moderno construído num antigo armazém, onde bancas de produtos orgânicos dividem espaço com cafés e restaurantes de espírito jovem.</li>
+                    <li><strong>Lilla&nbsp;Torg</strong> – Praça central rodeada de bares e restaurantes, perfeita para um drink no fim da tarde observando o vai‑e‑vem dos moradores.</li>
+                    <li><strong>Gamla&nbsp;Väster</strong> – Bairro de ruas estreitas e casas coloridas, ateliês e galerias. Um passeio tranquilo para quem gosta de arte e arquitetura.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Glossário Sueco -->
+        <section id="glossario" class="section">
+            <h2>Glossário Sueco</h2>
+            <p>Algumas palavras e expressões úteis com pronúncia aproximada:</p>
+            <table class="glossary">
+                <thead>
+                    <tr>
+                        <th>Palavra</th>
+                        <th>Pronúncia</th>
+                        <th>Significado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>hej</td><td>rêi</td><td>olá</td></tr>
+                    <tr><td>tack</td><td>ták</td><td>obrigada(o)</td></tr>
+                    <tr><td>ursäkta</td><td>ur‑shêk‑ta</td><td>com licença</td></tr>
+                    <tr><td>snälla</td><td>sné‑la</td><td>por favor</td></tr>
+                    <tr><td>god eftermiddag</td><td>gúd éfter‑mídar</td><td>boa tarde</td></tr>
+                    <tr><td>god kväll</td><td>gúd kvél</td><td>boa noite</td></tr>
+                    <tr><td>hur mycket kostar det?</td><td>rur mî‑cket kôs‑tar dê</td><td>quanto custa?</td></tr>
+                    <tr><td>förlåt</td><td>for‑lôt</td><td>me desculpe</td></tr>
+                    <tr><td>jag pratar inte svenska</td><td>iág prá‑tar ín‑te svên‑ska</td><td>não falo sueco</td></tr>
+                    <tr><td>jag är brasilianska</td><td>iág ér bra‑si‑li‑án‑ska</td><td>sou brasileira</td></tr>
+                    <tr><td>lagom</td><td>lah‑gom</td><td>equilíbrio / na medida certa</td></tr>
+                    <tr><td>fika</td><td>fi‑ka</td><td>pausa para café e bolo</td></tr>
+                    <tr><td>skål</td><td>skôl</td><td>saúde (brinde)</td></tr>
+                    <tr><td>ja</td><td>ya</td><td>sim</td></tr>
+                    <tr><td>nej</td><td>nei</td><td>não</td></tr>
+                    <tr><td>god morgon</td><td>guud mô‑ron</td><td>bom dia</td></tr>
+                    <tr><td>varsågod</td><td>var‑sho‑gud</td><td>de nada / aqui está</td></tr>
+                    <tr><td>Systembolaget</td><td>sis‑tem‑bo‑la‑get</td><td>loja estatal de bebidas alcoólicas</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Favoritos -->
+        <section id="favoritos" class="section">
+            <h2>Favoritos</h2>
+            <p>Os itens que você marcar como favoritos aparecerão aqui.</p>
+            <ul id="favorites-list" class="favorites-list"></ul>
+        </section>
+    </main>
+
+    <!-- Leaflet JS for interactive maps -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-oM/iGvL0dJEgNodcfkeC/LxbF6ukr/+Mfdy8tZ7tn2o="
+      crossorigin=""
+    ></script>
+    <!-- Main script for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
